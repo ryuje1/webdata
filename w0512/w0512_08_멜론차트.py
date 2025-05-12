@@ -51,6 +51,7 @@ trs = tbody.find_all("tr")
 ff = open("w0512/melon1.csv", "w", encoding="utf-8-sig", newline="")
 writer = csv.writer(ff)
 title = ['순위', '곡제목', '가수', '좋아요']
+writer.writerow(title)
 
 sum = 0
 for tr in trs:
