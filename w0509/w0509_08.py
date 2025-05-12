@@ -73,4 +73,4 @@ for tr in trs:
     print()
 
 ff.close()
-print("파일 저장완료")
+print("파일 저장완료") 

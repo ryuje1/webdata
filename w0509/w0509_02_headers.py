@@ -20,4 +20,4 @@ print("[ 프로그램 종료 ]")
 # if res.status_code == 200:
 #     print(res.text)
 # else:
-#     res.raise_for_status()
+#     res.raise_for_status() 

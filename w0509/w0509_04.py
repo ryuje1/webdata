@@ -52,4 +52,4 @@ print(len(li_datas))    # 길이 출력 (갯수)
 # print(li_datas)         # 모두 출력 (리스트 형태)
 
 for li_data in li_datas:    # 제목만 출력
-    print(li_data.find("p", {"class":"rl_txt"}).get_text())
+    print(li_data.find("p", {"class":"rl_txt"}).get_text()) 

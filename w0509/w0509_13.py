@@ -42,4 +42,4 @@ for tr in trs:
         print(td.get_text().strip(), end="\t")
         # fileName.append(td.get_text().strip())
     # writer.writerow(fileName)
-    print()
+    print() 

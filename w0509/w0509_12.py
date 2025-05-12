@@ -16,4 +16,4 @@ for fd in fds:
     for dt in dts:
         print(dt.get_text().strip())    # strip() : 공백제거
         fileName.append(dt.get_text().strip())
-    writer.writerow(fileName)
+    writer.writerow(fileName) 

@@ -9,4 +9,4 @@ f.write(txt2)
 
 f.close()
 
-print("프로그램 종료")
+print("프로그램 종료") 

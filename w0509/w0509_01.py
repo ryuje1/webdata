@@ -15,4 +15,4 @@ if res.status_code == 200:
     res.raise_for_status()  # 에러 시 종료
     print(res.text)     # text 글자 타입으로 출력
 else:
-    print("프로그램 종료")
+    print("프로그램 종료") 

@@ -37,4 +37,4 @@ for tr in trs:
     if len(tds) > 1:    # td가 1개인 것은 출력하지 말것
         for i in range(len(tds)-1):     # 0,1,2,3,4,5
             print(tds[i].get_text(), end="\t")
-        print()
+        print() 

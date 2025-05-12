@@ -24,4 +24,4 @@ print(soup.find("ul").find_all("li")[1].get_text())
 
 datas = soup.find("ul").find_all("li")
 for data in datas:
-    print(data.get_text())
+    print(data.get_text()) 

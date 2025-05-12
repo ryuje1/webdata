@@ -7,4 +7,4 @@ res = requests.get(url, headers=headers)
 with open("w0509/test3.html", "w", encoding="utf-8") as f:
     f.write(res.text)
 res.raise_for_status()
-print(res.text)
+print(res.text) 

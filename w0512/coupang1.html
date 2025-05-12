@@ -1,0 +1,28 @@
+﻿<html>
+ <body>
+  <script src="/YIEnD9uBMl2Tq1ut0pzy/zmJEfpc7fEif/B3Y9b00D/Ak/VTaDxAPgk?v=a50a07a1-5023-21f7-d75c-e89fb2a8173b&amp;t=605684792">
+  </script>
+  <script>
+   (function() {
+             var chlgeId = '';
+             var scripts = document.getElementsByTagName('script');
+             for (var i = 0; i < scripts.length; i++) {
+                 if (scripts[i].src && scripts[i].src.match(/t=([^&#]*)/)) {
+                     chlgeId = scripts[i].src.match(/t=([^&#]*)/)[1];
+                 }
+             }
+             var proxied = window.XMLHttpRequest.prototype.send;
+             window.XMLHttpRequest.prototype.send = function() {
+                 var pointer = this
+                 var intervalId = window.setInterval(function() {
+                     if (pointer.readyState === 4 && pointer.responseURL && pointer.responseURL.indexOf('t=' + chlgeId) > -1) {
+                         location.reload(true);
+                         clearInterval(intervalId);
+                     }
+                 }, 1);
+                 return proxied.apply(this, [].slice.call(arguments));
+             };
+         })();
+  </script>
+ </body>
+</html>

@@ -27,4 +27,4 @@ for i, tr in enumerate(trs):
         print(td.get_text(), end="\t")
         fileName.append(td.get_text())
     writer.writerow(fileName)           # 내용 부분 list 타입으로 저장
-    print()
+    print() 

@@ -20,4 +20,4 @@ trs = data.tbody.find_all("tr")
 # 50개 이름만 출력
 # trs[1].find_all("td")[1].find("a")
 # for tr in trs:
-#     print(tr.get_text())
+#     print(tr.get_text()) 
