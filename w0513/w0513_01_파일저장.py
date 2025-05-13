@@ -17,19 +17,19 @@ options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_experimental_option('useAutomationExtension', False)
 
 # 브라우저 실행
-browser = webdriver.Chrome(options=options)
+browser = webdriver.Chrome(options=options)     # 설정했던 옵션들을 가지고 크롬 브라우저 실행
 
 # 페이지 접속
-url = "https://www.melon.com/chart/index.htm"
+url = "https://edu1032.shiningcorp.com/index.php?device=pc&designkits=1"
 browser.get(url)
-time.sleep(3)   # 페이지 로딩 대기
+time.sleep(2)   # 페이지 로딩 대기
 
-soup = BeautifulSoup(browser.page_source,"lxml")
+# print(browser.page_source)
+soup = BeautifulSoup(browser.page_source, "lxml")
 
-## html 페이지 저장
-with open("w0512/melon1.html", "w", encoding="utf-8") as f:
+# 파일 저장
+with open("w0513/temple1.html", "w", encoding="utf-8") as f:
     f.write(soup.prettify())
-    
-## html 페이지 읽어오기
-with open("w0512/melon1.html", "r", encoding="utf-8") as f:
-    soup = BeautifulSoup(f, "lxml")
+
+# 프로그램 종료
+input("프로그램 종료 (Enter키 입력)   ")

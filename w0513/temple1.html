@@ -1,0 +1,1243 @@
+<html lang="ko">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="no" http-equiv="imagetoolbar"/>
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   샤이닝 아카데미 홈페이지 샘플
+  </title>
+  <link href="https://edu1032.shiningcorp.com/css/default.css?ver=171222" rel="stylesheet"/>
+  <link href="https://edu1032.shiningcorp.com/sh_img/hd/top_menu/style.css?ver=171222" rel="stylesheet"/>
+  <link href="https://edu1032.shiningcorp.com/sh_img/index/main_banner/style.css?ver=171222" rel="stylesheet"/>
+  <link href="https://edu1032.shiningcorp.com/skin/latest/sh_basic_roll/style.css?ver=171222" rel="stylesheet"/>
+  <link href="https://edu1032.shiningcorp.com/sh_img/include/inc01/style.css?ver=171222" rel="stylesheet"/>
+  <link href="https://edu1032.shiningcorp.com/sh_img/include/inc02/style.css?ver=171222" rel="stylesheet"/>
+  <link href="https://edu1032.shiningcorp.com/sh_img/include/inc03/style.css?ver=171222" rel="stylesheet"/>
+  <link href="https://edu1032.shiningcorp.com/sh_img/include/inc04/style.css?ver=171222" rel="stylesheet"/>
+  <link href="https://edu1032.shiningcorp.com/js/swiper/swiper.min.css?ver=171222" rel="stylesheet"/>
+  <link href="https://edu1032.shiningcorp.com/css/user.css?ver=171222" rel="stylesheet"/>
+  <style>
+   @import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@import url(//fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
+/* 나눔스퀘어 */
+@font-face {
+	font-family: 'NanumSquare';
+	src: url(//font.shiningcorp.com/css/font/NanumSquareR.eot);
+	src: url(//font.shiningcorp.com/css/font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+		 url(//font.shiningcorp.com/css/font/NanumSquareR.woff) format('woff'),
+		 url(//font.shiningcorp.com/css/font/NanumSquareR.ttf) format('truetype');
+}
+
+/* 본고딕 */
+@font-face {
+	font-family: 'notokr-thin';
+	src: url(//font.shiningcorp.com/css/font/notokr-thin.eot);
+	src: url(//font.shiningcorp.com/css/font/notokr-thin.eot?#iefix) format('embedded-opentype'),
+		 url(//font.shiningcorp.com/css/font/notokr-thin.woff2) format('woff2'),
+		 url(//font.shiningcorp.com/css/font/notokr-thin.woff) format('woff'),
+		 url(//font.shiningcorp.com/css/font/notokr-thin.ttf) format('truetype'),
+		 url(//font.shiningcorp.com/css/font/notokr-thin.svg#notokr-thin) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'notokr-regular';
+    src: url(//font.shiningcorp.com/css/font/notokr-regular.eot);
+    src: url(//font.shiningcorp.com/css/font/notokr-regular.eot?#iefix) format('embedded-opentype'),
+         url(//font.shiningcorp.com/css/font/notokr-regular.woff2) format('woff2'),
+         url(//font.shiningcorp.com/css/font/notokr-regular.woff) format('woff'),
+         url(//font.shiningcorp.com/css/font/notokr-regular.svg#notokr-regular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'notokr-medium';
+    src: url(//font.shiningcorp.com/css/font/notokr-medium.eot);
+    src: url(//font.shiningcorp.com/css/font/notokr-medium.eot?#iefix) format('embedded-opentype'),
+         url(//font.shiningcorp.com/css/font/notokr-medium.woff2) format('woff2'),
+         url(//font.shiningcorp.com/css/font/notokr-medium.woff) format('woff'),
+         url(//font.shiningcorp.com/css/font/notokr-medium.svg#notokr-medium) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'notokr-light';
+    src: url(//font.shiningcorp.com/css/font/notokr-light.eot);
+    src: url(//font.shiningcorp.com/css/font/notokr-light.eot?#iefix) format('embedded-opentype'),
+         url(//font.shiningcorp.com/css/font/notokr-light.woff2) format('woff2'),
+         url(//font.shiningcorp.com/css/font/notokr-light.woff) format('woff'),
+         url(//font.shiningcorp.com/css/font/notokr-light.ttf) format('truetype'),
+         url(//font.shiningcorp.com/css/font/notokr-light.svg#notokr-light) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'notokr-demilight';
+    src: url(//font.shiningcorp.com/css/font/notokr-demilight.eot);
+    src: url(//font.shiningcorp.com/css/font/notokr-demilight.eot?#iefix) format('embedded-opentype'),
+         url(//font.shiningcorp.com/css/font/notokr-demilight.woff2) format('woff2'),
+         url(//font.shiningcorp.com/css/font/notokr-demilight.woff) format('woff'),
+         url(//font.shiningcorp.com/css/font/notokr-demilight.ttf) format('truetype'),
+         url(//font.shiningcorp.com/css/font/notokr-demilight.svg#notokr-demilight) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'notokr-bold';
+    src: url(//font.shiningcorp.com/css/font/notokr-bold.eot);
+    src: url(//font.shiningcorp.com/css/font/notokr-bold.eot?#iefix) format('embedded-opentype'),
+         url(//font.shiningcorp.com/css/font/notokr-bold.woff2) format('woff2'),
+         url(//font.shiningcorp.com/css/font/notokr-bold.woff) format('woff'),
+         url(//font.shiningcorp.com/css/font/notokr-bold.svg#notokr-bold) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'notokr-black';
+    src: url(//font.shiningcorp.com/css/font/notokr-black.eot);
+    src: url(//font.shiningcorp.com/css/font/notokr-black.eot?#iefix) format('embedded-opentype'),
+         url(//font.shiningcorp.com/css/font/notokr-black.woff2) format('woff2'),
+         url(//font.shiningcorp.com/css/font/notokr-black.woff) format('woff'),
+         url(//font.shiningcorp.com/css/font/notokr-black.ttf) format('truetype'),
+         url(//font.shiningcorp.com/css/font/notokr-black.svg#notokr-black) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* 아리따 */
+@font-face {
+	font-family: 'arita-thin';
+	src: url(//font.shiningcorp.com/css/font/arita-Thin.eot);
+	src: url(//font.shiningcorp.com/css/font/arita-Thin.eot?#iefix) format('embedded-opentype'),
+		 url(//font.shiningcorp.com/css/font/arita-Thin.woff) format('woff'),
+		 url(//font.shiningcorp.com/css/font/arita-Thin.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'arita-light';
+	src: url(//font.shiningcorp.com/css/font/arita-Light.eot);
+	src: url(//font.shiningcorp.com/css/font/arita-Light.eot?#iefix) format('embedded-opentype'),
+		 url(//font.shiningcorp.com/css/font/arita-Light.woff) format('woff'),
+		 url(//font.shiningcorp.com/css/font/arita-Light.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'arita-medium';
+	src: url(//font.shiningcorp.com/css/font/arita-Medium.eot);
+	src: url(//font.shiningcorp.com/css/font/arita-Medium.eot?#iefix) format('embedded-opentype'),
+		 url(//font.shiningcorp.com/css/font/arita-Medium.woff) format('woff'),
+		 url(//font.shiningcorp.com/css/font/arita-Medium.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'arita-semibold';
+	src: url(//font.shiningcorp.com/css/font/arita-SemiBold.eot);
+	src: url(//font.shiningcorp.com/css/font/arita-SemiBold.eot?#iefix) format('embedded-opentype'),
+		 url(//font.shiningcorp.com/css/font/arita-SemiBold.woff) format('woff'),
+		 url(//font.shiningcorp.com/css/font/arita-SemiBold.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'arita-bold';
+	src: url(//font.shiningcorp.com/css/font/arita-Bold.eot);
+	src: url(//font.shiningcorp.com/css/font/arita-Bold.eot?#iefix) format('embedded-opentype'),
+		 url(//font.shiningcorp.com/css/font/arita-Bold.woff) format('woff'),
+		 url(//font.shiningcorp.com/css/font/arita-Bold.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+  </style>
+  <!--[if lte IE 8]>
+<script src="https://edu1032.shiningcorp.com/js/html5.js"></script>
+<![endif]-->
+  <script>
+   // 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "https://edu1032.shiningcorp.com";
+var g5_bbs_url   = "https://edu1032.shiningcorp.com/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+  </script>
+  <script src="https://edu1032.shiningcorp.com/js/jquery-1.8.3.min.js">
+  </script>
+  <script src="https://edu1032.shiningcorp.com/js/jquery-ui.js">
+  </script>
+  <script src="https://edu1032.shiningcorp.com/js/jquery.menu.js?ver=171222">
+  </script>
+  <script src="https://edu1032.shiningcorp.com/js/common.js?ver=171222">
+  </script>
+  <script src="https://edu1032.shiningcorp.com/js/wrest.js?ver=171222">
+  </script>
+  <script src="https://edu1032.shiningcorp.com/js/placeholders.min.js">
+  </script>
+  <link href="https://edu1032.shiningcorp.com/js/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+  <script src="https://edu1032.shiningcorp.com/sh_img/hd/top_menu/script.js?ver=171222">
+  </script>
+  <script src="https://edu1032.shiningcorp.com/sh_img/index/main_banner/script.js?ver=171222">
+  </script>
+  <script src="https://edu1032.shiningcorp.com/js/swiper/swiper.min.js?ver=171222">
+  </script>
+ </head>
+ <body>
+  <style>
+   /* 디자인샘플 보러가기 */
+#goToDesign{position:relative;width:100%;padding:7px 0;border-bottom:1px solid #fff073;font-size:12px;text-align:center;background-color:#fffbd9;font-family:dotum} 
+#goToDesign a{padding-left:10px;font-weight:bold;color:#f96319}
+#goToDesign a:hover{text-decoration:underline}
+  </style>
+  <script>
+   $(document).on('click', 'a', function() {
+  var href = $(this).attr('href');
+  href += (href.indexOf('?') == -1 ? '?' : '&') + 'designkits=1';
+  $(this).attr('href', href);
+});
+  </script>
+  <!-- 100% 배경이미지 때문에 사용 -->
+  <div id="sh_wrapper">
+   <!-- 상단 시작 { -->
+   <div id="sh_hd">
+    <div class="top_nav_bg">
+    </div>
+    <h1 id="hd_h1">
+     샤이닝 아카데미 홈페이지 샘플
+    </h1>
+    <div id="skip_to_container">
+     <a href="#sh_container">
+      본문 바로가기
+     </a>
+    </div>
+    <!-- 팝업레이어 시작 { -->
+    <div id="hd_pop">
+     <h2>
+      팝업레이어 알림
+     </h2>
+     <span class="sound_only">
+      팝업레이어 알림이 없습니다.
+     </span>
+    </div>
+    <script>
+     $(function() {
+    $(".hd_pops_reject").click(function() {
+        var id = $(this).attr('class').split(' ');
+        var ck_name = id[1];
+        var exp_time = parseInt(id[2]);
+        $("#"+id[1]).css("display", "none");
+        set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+    });
+    $('.hd_pops_close').click(function() {
+        var idb = $(this).attr('class').split(' ');
+        $('#'+idb[1]).css('display','none');
+    });
+    $("#hd").css("z-index", 1000);
+});
+    </script>
+    <!-- } 팝업레이어 끝 -->
+    <div id="topNavWrap">
+     <!-- 로고 -->
+     <h2 id="top_logo">
+      <a href="/">
+       <img alt="샤이닝 아카데미 홈페이지 샘플" src="https://edu1032.shiningcorp.com/sh_img/hd/top_menu/logo.png"/>
+      </a>
+     </h2>
+     <div class="right">
+      <!-- 상단메뉴 -->
+      <ul id="top_nav">
+       <li class="list01">
+        <a href="/sh_page/page6.php">
+         대학안내
+        </a>
+        <ul>
+         <li>
+          <a href="/sh_page/page6.php">
+           대학안내
+          </a>
+         </li>
+         <li>
+          <a href="/bbs/board.php?bo_table=table7">
+           강사소개
+          </a>
+         </li>
+         <li>
+          <a href="/bbs/board.php?bo_table=table8">
+           오시는길
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="list02">
+        <a href="/sh_page/page10.php">
+         학생서비스
+        </a>
+        <ul>
+         <li>
+          <a href="/sh_page/page10.php">
+           서비스 안내
+          </a>
+         </li>
+         <li>
+          <a href="/sh_page/page11.php">
+           서비스 시스템
+          </a>
+         </li>
+         <li>
+          <a href="/bbs/board.php?bo_table=table35">
+           교육과정
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="list03">
+        <a href="/bbs/board.php?bo_table=table13">
+         학부학과안내
+        </a>
+        <ul>
+         <li>
+          <a href="/bbs/board.php?bo_table=table13">
+           갤러리 A타입
+          </a>
+         </li>
+         <li>
+          <a href="/bbs/board.php?bo_table=table26">
+           갤러리 B타입
+          </a>
+         </li>
+         <li>
+          <a href="/bbs/board.php?bo_table=table24">
+           갤러리 C타입
+          </a>
+         </li>
+         <li>
+          <a href="/bbs/board.php?bo_table=table33">
+           갤러리 D타입
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="list04">
+        <a href="/bbs/board.php?bo_table=table18">
+         취업지원
+        </a>
+        <ul>
+         <li>
+          <a href="/bbs/board.php?bo_table=table18">
+           공지사항
+          </a>
+         </li>
+         <li>
+          <a href="/bbs/board.php?bo_table=table19">
+           FAQ
+          </a>
+         </li>
+         <li>
+          <a href="/bbs/board.php?bo_table=table27">
+           수업갤러리
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="list05">
+        <a href="/bbs/board.php?bo_table=table15">
+         대학사이트
+        </a>
+        <ul>
+         <li>
+          <a href="/bbs/board.php?bo_table=table15">
+           대학사이트
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <!-- 메뉴버튼 -->
+      <div id="allBtn">
+       <span>
+       </span>
+      </div>
+      <div id="allWrap">
+       <div class="inner">
+        <div class="cs">
+         <div class="ci">
+          <a href="/">
+           <img alt="샤이닝 아카데미 홈페이지 샘플" src="/sh_img/hd/top_menu/logo.png"/>
+          </a>
+         </div>
+         <div class="txt">
+          <img alt="상담원" src="/sh_img/hd/top_menu/all_icon.png"/>
+          <div class="wrap">
+           <p class="ballon">
+            무엇이 궁금하신가요?
+           </p>
+           <div class="num">
+            <p class="tel">
+             1544-0634
+            </p>
+            <p class="etc">
+             Fax . 0505-200-6060
+             <br/>
+             E-mail . hdweb@hdweb.co.kr
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="sitemap">
+         <p class="tit">
+          Sitemap
+         </p>
+         <ul>
+          <li>
+           <a class="bmn" href="/sh_page/page6.php">
+            대학안내
+           </a>
+           <ul class="smn">
+            <li>
+             <a href="/sh_page/page6.php">
+              대학안내
+             </a>
+            </li>
+            <li>
+             <a href="/bbs/board.php?bo_table=table7">
+              강사소개
+             </a>
+            </li>
+            <li>
+             <a href="/bbs/board.php?bo_table=table8">
+              오시는길
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a class="bmn" href="/sh_page/page10.php">
+            학생서비스
+           </a>
+           <ul class="smn">
+            <li>
+             <a href="/sh_page/page10.php">
+              서비스 안내
+             </a>
+            </li>
+            <li>
+             <a href="/sh_page/page11.php">
+              서비스 시스템
+             </a>
+            </li>
+            <li>
+             <a href="/bbs/board.php?bo_table=table35">
+              교육과정
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a class="bmn" href="/bbs/board.php?bo_table=table13">
+            학부학과안내
+           </a>
+           <ul class="smn">
+            <li>
+             <a href="/bbs/board.php?bo_table=table13">
+              갤러리 A타입
+             </a>
+            </li>
+            <li>
+             <a href="/bbs/board.php?bo_table=table26">
+              갤러리 B타입
+             </a>
+            </li>
+            <li>
+             <a href="/bbs/board.php?bo_table=table24">
+              갤러리 C타입
+             </a>
+            </li>
+            <li>
+             <a href="/bbs/board.php?bo_table=table33">
+              갤러리 D타입
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a class="bmn" href="/bbs/board.php?bo_table=table18">
+            취업지원
+           </a>
+           <ul class="smn">
+            <li>
+             <a href="/bbs/board.php?bo_table=table18">
+              공지사항
+             </a>
+            </li>
+            <li>
+             <a href="/bbs/board.php?bo_table=table19">
+              FAQ
+             </a>
+            </li>
+            <li>
+             <a href="/bbs/board.php?bo_table=table27">
+              수업갤러리
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a class="bmn" href="/bbs/board.php?bo_table=table15">
+            대학사이트
+           </a>
+           <ul class="smn">
+            <li>
+             <a href="/bbs/board.php?bo_table=table15">
+              대학사이트
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <!-- inner [e] -->
+      </div>
+      <!-- allWrap [e] -->
+     </div>
+    </div>
+   </div>
+   <!-- } 상단 끝 -->
+   <!-- 콘텐츠 시작 { -->
+   <div id="sh_container">
+    <div id="sh_container_wrapper">
+     <!-- 메인 비주얼모션 -->
+     <div id="mainVisual">
+      <div class="txt_area">
+       <p class="tit" style="opacity: 1; margin-left: 0px;">
+        <b>
+         더 큰 미래
+        </b>
+        를 더하고,
+        <br/>
+        <b>
+         더 멋진 내일
+        </b>
+        을 배우는 곳
+       </p>
+       <p class="txt" style="opacity: 1;">
+        샤이닝인의 차별화된 전문 교육프로그램으로
+        <br/>
+        내일의 경쟁력이 자랍니다
+       </p>
+       <div class="bar">
+        <div class="main_controls">
+         <div class="counter">
+          <p>
+           0
+           <span class="current">
+            1
+           </span>
+          </p>
+          /
+          <p>
+           0
+           <span class="total">
+            3
+           </span>
+          </p>
+         </div>
+        </div>
+        <div class="main_pager">
+         <div class="bx-pager bx-default-pager">
+          <div class="bx-pager-item">
+           <a class="bx-pager-link active" data-slide-index="0" href="">
+            1
+           </a>
+          </div>
+          <div class="bx-pager-item">
+           <a class="bx-pager-link" data-slide-index="1" href="">
+            2
+           </a>
+          </div>
+          <div class="bx-pager-item">
+           <a class="bx-pager-link" data-slide-index="2" href="">
+            3
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div id="main_img">
+       <div class="bx-wrapper" style="max-width: 100%;">
+        <div aria-live="polite" class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 718px;">
+         <ul class="slider" style="width: auto; position: relative;">
+          <li aria-hidden="false" style="float: none; list-style: none; position: absolute; width: 1905px; z-index: 50; display: block;">
+          </li>
+          <li aria-hidden="true" style="float: none; list-style: none; position: absolute; width: 1905px; z-index: 0; display: none;">
+          </li>
+          <li aria-hidden="true" style="float: none; list-style: none; position: absolute; width: 1905px; z-index: 0; display: none;">
+          </li>
+         </ul>
+        </div>
+        <div class="bx-controls">
+        </div>
+       </div>
+      </div>
+      <div class="c_bg">
+       <div class="inner">
+        <div class="list">
+         <p class="tit">
+          Notice
+         </p>
+         <div class="sh_lt">
+          <div class="bx-wrapper" style="max-width: 100%;">
+           <div aria-live="polite" class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 85px;">
+            <ul class="slider" style="width: auto; position: relative; transition-duration: 0s; transform: translate3d(0px, -85px, 0px);">
+             <li aria-hidden="true" class="slide bx-clone" style="float: none; list-style: none; position: relative; width: 698px;">
+              <span class="sh_notice">
+               <a href="https://edu1032.shiningcorp.com/bbs/board.php?bo_table=table18&amp;wr_id=1">
+                새롭게 홈페이지를 오픈하였습니다!
+               </a>
+              </span>
+              <span class="datetime">
+               2018-08-24
+              </span>
+             </li>
+             <li aria-hidden="false" class="slide" style="float: none; list-style: none; position: relative; width: 698px;">
+              <span class="sh_notice">
+               <a href="https://edu1032.shiningcorp.com/bbs/board.php?bo_table=table18&amp;wr_id=2">
+                샤이닝에서 인원을 채용합니다.
+               </a>
+              </span>
+              <span class="datetime">
+               2018-08-24
+              </span>
+             </li>
+             <li aria-hidden="true" class="slide" style="float: none; list-style: none; position: relative; width: 698px;">
+              <span class="sh_notice">
+               <a href="https://edu1032.shiningcorp.com/bbs/board.php?bo_table=table18&amp;wr_id=1">
+                새롭게 홈페이지를 오픈하였습니다!
+               </a>
+              </span>
+              <span class="datetime">
+               2018-08-24
+              </span>
+             </li>
+             <li aria-hidden="true" class="slide bx-clone" style="float: none; list-style: none; position: relative; width: 698px;">
+              <span class="sh_notice">
+               <a href="https://edu1032.shiningcorp.com/bbs/board.php?bo_table=table18&amp;wr_id=2">
+                샤이닝에서 인원을 채용합니다.
+               </a>
+              </span>
+              <span class="datetime">
+               2018-08-24
+              </span>
+             </li>
+            </ul>
+           </div>
+           <div class="bx-controls bx-has-controls-direction">
+            <div class="bx-controls-direction">
+             <a class="bx-prev" href="">
+              <i aria-hidden="true" class="fa fa-angle-up">
+              </i>
+             </a>
+             <a class="bx-next" href="">
+              <i aria-hidden="true" class="fa fa-angle-down">
+              </i>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+         <script>
+          $(document).ready(function(){
+  $('.slider').bxSlider({
+    mode: 'vertical',
+    minSlides: 1,
+	pager:false,
+    nextText: '<i class="fa fa-angle-down" aria-hidden="true"></i>',
+	prevText: '<i class="fa fa-angle-up" aria-hidden="true"></i>',
+  });
+});
+         </script>
+        </div>
+        <a class="link" href="">
+         입학안내 바로가기
+         <i aria-hidden="true" class="fa fa-pencil-square-o">
+         </i>
+        </a>
+       </div>
+      </div>
+     </div>
+     <script>
+      $('#mainVisual .txt_area .tit').delay(100).animate({"opacity":"1","margin-left":"0"},800);
+$('#mainVisual .txt_area .txt').delay(500).animate({"opacity":"1"},800);
+
+var mainSlider = $('#main_img .slider').bxSlider({
+	mode: 'fade',
+	auto: true,
+	pause: 4000,
+	speed: 1000,
+	pagerSelector: '.main_pager',
+    controls: false,
+	onSlideBefore: function ($slideElement, oldIndex, newIndex){
+		var current_index = parseInt(newIndex + 1);
+		$('.main_controls .current').text(current_index);
+	}
+});
+$('.main_controls .total').text(mainSlider.getSlideCount());
+     </script>
+     <!--인덱스 영역-->
+     <section id="sh_section">
+      <article id="atc01">
+       <div class="inner">
+        <div class="tit_area">
+         <p class="stit">
+          About Shining
+         </p>
+         <p class="tit">
+          학생들의 꿈이 자라나는
+          <br/>
+          <b>
+           샤이닝 대학교
+          </b>
+          입니다
+         </p>
+        </div>
+        <ul class="cont">
+         <li>
+          <a href="/sh_page/page6.php">
+           <p class="num">
+            01
+            <span>
+            </span>
+           </p>
+           <dl>
+            <dt>
+             대학안내
+            </dt>
+            <dd>
+             학우들에게 많은 소식을 전달하는
+             <br/>
+             샤이닝 대학이 되겠습니다.
+            </dd>
+           </dl>
+           <p class="img">
+           </p>
+          </a>
+         </li>
+         <li>
+          <a href="/sh_page/page10.php">
+           <p class="num">
+            02
+            <span>
+            </span>
+           </p>
+           <dl>
+            <dt>
+             학생서비스
+            </dt>
+            <dd>
+             샤이닝 대학은 학생들에게
+             <br/>
+             다양한 서비스를 제공하고 있습니다.
+            </dd>
+           </dl>
+           <p class="img">
+           </p>
+          </a>
+         </li>
+         <li>
+          <a href="/bbs/board.php?bo_table=table13">
+           <p class="num">
+            03
+            <span>
+            </span>
+           </p>
+           <dl>
+            <dt>
+             학부학과안내
+            </dt>
+            <dd>
+             샤이닝 대학은 다양한
+             <br/>
+             학부와 학과를 운영중입니다.
+            </dd>
+           </dl>
+           <p class="img">
+           </p>
+          </a>
+         </li>
+         <li>
+          <a href="/bbs/board.php?bo_table=table18">
+           <p class="num">
+            04
+            <span>
+            </span>
+           </p>
+           <dl>
+            <dt>
+             취업지원
+            </dt>
+            <dd>
+             학생들의 취업을 보다 쉽게
+             <br/>
+             할 수 있도록 돕겠습니다.
+            </dd>
+           </dl>
+           <p class="img">
+           </p>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </article>
+      <script>
+       $(window).on("scroll",function(){
+		if($(window).scrollTop() > 100) { 
+			$('#atc01 ul li:nth-child(1)').addClass("active");
+			$('#atc01 ul li:nth-child(2)').addClass("active");
+			$('#atc01 ul li:nth-child(3)').addClass("active");
+			$('#atc01 ul li:nth-child(4)').addClass("active");
+		} else{
+			$('#atc01 ul li:nth-child(1)').removeClass("active");
+			$('#atc01 ul li:nth-child(2)').removeClass("active");
+			$('#atc01 ul li:nth-child(3)').removeClass("active");
+			$('#atc01 ul li:nth-child(4)').removeClass("active");
+		}
+		return false;		
+	});
+      </script>
+      <article id="atc02">
+       <div class="inner">
+        <div class="txt_all">
+         <p class="stit">
+          Where dreams come true
+         </p>
+         <div class="tit_area">
+          <p class="tit">
+           믿음의 대학, 믿을 수 있는 인재
+           <br/>
+           <b>
+            샤이닝에서 꿈을 펼쳐보세요.
+           </b>
+          </p>
+          <div class="txt_area">
+           <p class="sub_tit">
+            세계속의 미래형 실용교육의 중심 샤이닝 대학
+           </p>
+           <p class="txt">
+            다양한 인재를 성장시키기 위해 성공적인 취업가능 환경을 제공하고 있는 샤이닝대학은
+            <br/>
+            실용과 혁신, 글로벌의 가치 아래 지식과 역량을 넘어 유일성을 지향합니다.
+           </p>
+          </div>
+         </div>
+        </div>
+        <div class="bx-wrapper" style="max-width: 100%;">
+         <div aria-live="polite" class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 440px;">
+          <ul class="slide" style="width: auto; position: relative;">
+           <li aria-hidden="false" class="img01" style="float: none; list-style: none; position: absolute; width: 1560px; z-index: 50; display: block;">
+           </li>
+           <li aria-hidden="true" class="img02" style="float: none; list-style: none; position: absolute; width: 1560px; z-index: 0; display: none;">
+           </li>
+          </ul>
+         </div>
+         <div class="bx-controls bx-has-pager">
+          <div class="bx-pager bx-default-pager">
+           <div class="bx-pager-item">
+            <a class="bx-pager-link active" data-slide-index="0" href="">
+             1
+            </a>
+           </div>
+           <div class="bx-pager-item">
+            <a class="bx-pager-link" data-slide-index="1" href="">
+             2
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </article>
+      <script>
+       $(document).ready(function(){
+  $('#atc02 .slide').bxSlider({
+		mode: 'fade',
+		pager: true,
+		auto: true,
+        controls : false, //prev/next
+        captions: true,  //pager
+        touchEnabled:false,
+		pause: 5000 // 캐러셀 시간설정
+  });
+});
+
+$(window).on("scroll",function(){
+    if($(window).scrollTop() > 1200) { 
+        $('#atc02 .slide').addClass("active");
+    } else{
+        $('#atc02 .slide').removeClass("active");
+    }
+    return false;		
+});
+      </script>
+      <article id="atc03">
+       <div class="inner">
+        <div class="left">
+         <a class="tit_area" href="/bbs/board.php?bo_table=table18">
+          <p class="tit">
+           Latest News
+          </p>
+          <p class="more">
+          </p>
+         </a>
+         <ul>
+          <li>
+           <a href="/bbs/board.php?bo_table=table18&amp;wr_id=2">
+            <div class="date">
+             <p class="day">
+              24
+             </p>
+             2018.08
+            </div>
+            <div class="cont">
+             <p class="subj">
+              샤이닝에서 인원을 채용합니다.
+             </p>
+             <p class="txt">
+              샤이닝에서 인원을 채용합니다.
+             </p>
+            </div>
+           </a>
+          </li>
+          <li>
+           <a href="/bbs/board.php?bo_table=table18&amp;wr_id=1">
+            <div class="date">
+             <p class="day">
+              24
+             </p>
+             2018.08
+            </div>
+            <div class="cont">
+             <p class="subj">
+              새롭게 홈페이지를 오픈하였습니다!
+             </p>
+             <p class="txt">
+              저희 make24에서 양질의 서비스와 발전하는 기업이 되기위해새로이 홈페이지를 오픈 하였습...
+             </p>
+            </div>
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="right">
+         <div class="cont">
+          <p class="stit">
+           Current Situation
+          </p>
+          <p class="tit">
+           지역산업 맞춤 인재양성의 산실
+           <br/>
+           <b>
+            샤이닝 대학교
+           </b>
+          </p>
+          <p class="txt">
+           14년 동안 다양한 사람들의 꿈을 이뤄온 샤이닝 대학교는
+           <br/>
+           53개 글로벌 대학과 국제 교류를 통한 역량있는 인재를 발굴합니다.
+          </p>
+          <a href="/sh_page/page6.php">
+           <span>
+            view more
+           </span>
+          </a>
+         </div>
+        </div>
+       </div>
+      </article>
+      <article id="atc04">
+       <div class="inner">
+        <p class="stit">
+         Shining Insight
+        </p>
+        <div class="tit_area">
+         <div aria-controls="swiper-wrapper-4e315612e2ddcf6a" aria-label="Previous slide" class="swiper-button-prev2 contols prev" role="button" tabindex="0">
+          Prev
+         </div>
+         <p class="tit">
+          샤이닝 대학의 다양한
+          <b>
+           정보
+          </b>
+          를
+          <b>
+           확인
+          </b>
+          하세요.
+         </p>
+         <div aria-controls="swiper-wrapper-4e315612e2ddcf6a" aria-label="Next slide" class="swiper-button-next2 contols next" role="button" tabindex="0">
+          Next
+         </div>
+        </div>
+       </div>
+       <div class="swiper-container gallery_box swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+        <ul aria-live="off" class="swiper-wrapper gall" id="swiper-wrapper-4e315612e2ddcf6a" style="transition-duration: 0ms; transform: translate3d(-2733.5px, 0px, 0px);">
+         <li aria-label="1 / 12" class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" role="group" style="margin-right: 30px;">
+          <a href="/bbs/board.php?bo_table=table18&amp;wr_id=29">
+           <div class="thum" data-cursor-text="More" style="background-image:url(https://edu1032.shiningcorp.com/data/editor/2109/thumb-7efa687ca5fb4440880bb82838033639_1631508294_9523_380x.jpg)">
+           </div>
+           <p class="gall_tit">
+            샤이닝대, 교원 대상 ‘에듀테크’ 특강..
+           </p>
+          </a>
+         </li>
+         <li aria-label="2 / 12" class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" role="group" style="margin-right: 30px;">
+          <a href="/bbs/board.php?bo_table=table18&amp;wr_id=27">
+           <div class="thum" data-cursor-text="More" style="background-image:url(https://edu1032.shiningcorp.com/data/editor/2109/thumb-7efa687ca5fb4440880bb82838033639_1631508279_8841_380x.jpg)">
+           </div>
+           <p class="gall_tit">
+            샤이닝대 미래자동차학부 ‘미래차’제작시..
+           </p>
+          </a>
+         </li>
+         <li aria-label="3 / 12" class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="2" role="group" style="margin-right: 30px;">
+          <a href="/bbs/board.php?bo_table=table18&amp;wr_id=26">
+           <div class="thum" data-cursor-text="More" style="background-image:url(https://edu1032.shiningcorp.com/data/editor/2109/thumb-7efa687ca5fb4440880bb82838033639_1631508265_3824_380x.jpg)">
+           </div>
+           <p class="gall_tit">
+            샤이닝대, ‘IT융합 전자회로설계 경기..
+           </p>
+          </a>
+         </li>
+         <li aria-label="4 / 12" class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="3" role="group" style="margin-right: 30px;">
+          <a href="/bbs/board.php?bo_table=table18&amp;wr_id=25">
+           <div class="thum" data-cursor-text="More" style="background-image:url(https://edu1032.shiningcorp.com/data/editor/2109/thumb-7efa687ca5fb4440880bb82838033639_1631508249_8696_380x.jpg)">
+           </div>
+           <p class="gall_tit">
+            샤이닝대 실내디자인학부, 샤이닝대학교
+           </p>
+          </a>
+         </li>
+         <li aria-label="5 / 12" class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" role="group" style="margin-right: 30px;">
+          <a href="/bbs/board.php?bo_table=table18&amp;wr_id=29">
+           <div class="thum" data-cursor-text="More" style="background-image:url(https://edu1032.shiningcorp.com/data/editor/2109/thumb-7efa687ca5fb4440880bb82838033639_1631508294_9523_380x.jpg)">
+           </div>
+           <p class="gall_tit">
+            샤이닝대, 교원 대상 ‘에듀테크’ 특강..
+           </p>
+          </a>
+         </li>
+         <li aria-label="6 / 12" class="swiper-slide" data-swiper-slide-index="1" role="group" style="margin-right: 30px;">
+          <a href="/bbs/board.php?bo_table=table18&amp;wr_id=27">
+           <div class="thum" data-cursor-text="More" style="background-image:url(https://edu1032.shiningcorp.com/data/editor/2109/thumb-7efa687ca5fb4440880bb82838033639_1631508279_8841_380x.jpg)">
+           </div>
+           <p class="gall_tit">
+            샤이닝대 미래자동차학부 ‘미래차’제작시..
+           </p>
+          </a>
+         </li>
+         <li aria-label="7 / 12" class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2" role="group" style="margin-right: 30px;">
+          <a href="/bbs/board.php?bo_table=table18&amp;wr_id=26">
+           <div class="thum" data-cursor-text="More" style="background-image:url(https://edu1032.shiningcorp.com/data/editor/2109/thumb-7efa687ca5fb4440880bb82838033639_1631508265_3824_380x.jpg)">
+           </div>
+           <p class="gall_tit">
+            샤이닝대, ‘IT융합 전자회로설계 경기..
+           </p>
+          </a>
+         </li>
+         <li aria-label="8 / 12" class="swiper-slide swiper-slide-active" data-swiper-slide-index="3" role="group" style="margin-right: 30px;">
+          <a href="/bbs/board.php?bo_table=table18&amp;wr_id=25">
+           <div class="thum" data-cursor-text="More" style="background-image:url(https://edu1032.shiningcorp.com/data/editor/2109/thumb-7efa687ca5fb4440880bb82838033639_1631508249_8696_380x.jpg)">
+           </div>
+           <p class="gall_tit">
+            샤이닝대 실내디자인학부, 샤이닝대학교
+           </p>
+          </a>
+         </li>
+         <li aria-label="9 / 12" class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" role="group" style="margin-right: 30px;">
+          <a href="/bbs/board.php?bo_table=table18&amp;wr_id=29">
+           <div class="thum" data-cursor-text="More" style="background-image:url(https://edu1032.shiningcorp.com/data/editor/2109/thumb-7efa687ca5fb4440880bb82838033639_1631508294_9523_380x.jpg)">
+           </div>
+           <p class="gall_tit">
+            샤이닝대, 교원 대상 ‘에듀테크’ 특강..
+           </p>
+          </a>
+         </li>
+         <li aria-label="10 / 12" class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" role="group" style="margin-right: 30px;">
+          <a href="/bbs/board.php?bo_table=table18&amp;wr_id=27">
+           <div class="thum" data-cursor-text="More" style="background-image:url(https://edu1032.shiningcorp.com/data/editor/2109/thumb-7efa687ca5fb4440880bb82838033639_1631508279_8841_380x.jpg)">
+           </div>
+           <p class="gall_tit">
+            샤이닝대 미래자동차학부 ‘미래차’제작시..
+           </p>
+          </a>
+         </li>
+         <li aria-label="11 / 12" class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="2" role="group" style="margin-right: 30px;">
+          <a href="/bbs/board.php?bo_table=table18&amp;wr_id=26">
+           <div class="thum" data-cursor-text="More" style="background-image:url(https://edu1032.shiningcorp.com/data/editor/2109/thumb-7efa687ca5fb4440880bb82838033639_1631508265_3824_380x.jpg)">
+           </div>
+           <p class="gall_tit">
+            샤이닝대, ‘IT융합 전자회로설계 경기..
+           </p>
+          </a>
+         </li>
+         <li aria-label="12 / 12" class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="3" role="group" style="margin-right: 30px;">
+          <a href="/bbs/board.php?bo_table=table18&amp;wr_id=25">
+           <div class="thum" data-cursor-text="More" style="background-image:url(https://edu1032.shiningcorp.com/data/editor/2109/thumb-7efa687ca5fb4440880bb82838033639_1631508249_8696_380x.jpg)">
+           </div>
+           <p class="gall_tit">
+            샤이닝대 실내디자인학부, 샤이닝대학교
+           </p>
+          </a>
+         </li>
+        </ul>
+        <a class="more_gall" href="/bbs/board.php?bo_table=table18">
+         <i class="fa fa-th">
+         </i>
+         view all
+        </a>
+        <span aria-atomic="true" aria-live="assertive" class="swiper-notification">
+        </span>
+       </div>
+      </article>
+      <script>
+       var swiper = new Swiper('.swiper-container', {
+	initialSlide: 3,
+	//allowTouchMove: false,
+	centeredSlides: true,
+	slidesPerView: 'auto',
+	spaceBetween: 30,
+	loop: true,
+	speed : 1000,
+	loopFillGroupWithBlank: true,
+	autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },	
+	pagination: false,
+	navigation: {
+		nextEl: '.swiper-button-next2',
+		prevEl: '.swiper-button-prev2',
+	},
+});
+      </script>
+     </section>
+    </div>
+    <!-- sh_container_wrapper -->
+   </div>
+   <!-- sh_container -->
+   <!-- } 콘텐츠 끝 -->
+   <!-- 하단 시작 { -->
+   <div id="sh_ft">
+    <div id="sh_ft_wrapper">
+     <div class="tit">
+      <img alt="샤이닝 아카데미 홈페이지 샘플" src="https://edu1032.shiningcorp.com/sh_img/hd/top_menu/logo.png"/>
+     </div>
+     <div class="info">
+      <ul class="ft_nav">
+       <li>
+        <a href="/sh_page/page6.php">
+         대학안내
+        </a>
+       </li>
+       <li>
+        <a href="/sh_page/page10.php">
+         학생서비스
+        </a>
+       </li>
+       <li>
+        <a href="/bbs/board.php?bo_table=table13">
+         학부학과안내
+        </a>
+       </li>
+       <li>
+        <a href="/bbs/board.php?bo_table=table18">
+         취업지원
+        </a>
+       </li>
+       <li>
+        <a href="/bbs/board.php?bo_table=table15">
+         대학사이트
+        </a>
+       </li>
+      </ul>
+      경기 부천시 원미구 신흥로 223 신중동역 랜드마크 푸르지오 시티 101동 오피스 49층 사업자 번호 : 130-37-46318(등록2007년)
+      <br/>
+      통신판매업종신고 : 제2010-경기부천-924호 상호 : 샤이닝 대표 : 오성민
+      <br/>
+      고객센터:1544-0634 팩스:0505-200-6060 이메일:hdweb@hdweb.co.kr
+      <br/>
+      ⓒ 샤이닝 아카데미 홈페이지 샘플
+      <ul class="link">
+       <li>
+        <a href="/admin/admin.login.php">
+         ADMIN
+        </a>
+       </li>
+       <li>
+        <a href="http://www.make24.kr/" target="_blank">
+         MAKE24
+        </a>
+       </li>
+       <li>
+        <a href="http://www.hdweb.co.kr/" target="_blank">
+         HDWEB
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="cs">
+      <p class="tit">
+       CS Center
+      </p>
+      <p class="tel">
+       1544-0634
+      </p>
+      Fax. 0505-200-6060
+      <br/>
+      E-mail. hdweb@hdweb.co.kr
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- sh_wrapper -->
+  <script>
+   $(function() {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+  </script>
+  <!-- } 하단 끝 -->
+  <!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+  <!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+  <script src="https://www.shiningcorp.com/designTail.js">
+  </script>
+ </body>
+</html>
